@@ -1,0 +1,52 @@
+<html ng-app="myApp">
+<head>
+<title>Blogit</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="content/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<!-- /.Filters (ng-repeat)-->
+<body>
+<div>
+<ul>
+<li ng-repeat="item in fruits |orderBy:item:true">{{item}}</li>
+</ul>
+</div>
+	  <!-- /.(Ng-if) -->
+<div ng-if="true">
+<h1>Hello</h1>
+</div>
+<div ng-if="false">
+<h1>Hello World</h1>
+</div>
+	  <!-- /Ng-if -->
+<div>
+<ul>
+<li ng-repeat="item in numbers" ng-if="item%2 == 0">{{item}}</li>
+</ul>
+</div>
+	  <!-- /Ng-Show & Hide -->
+<div ng-show="true">
+<h1>Hello1</h1>
+</div>
+<div ng-hide="true">
+<h1>Hello2</h1>
+</div>
+<p></p>
+<div ng-show="false">
+<h1>Hello3</h1>
+</div>
+<div ng-hide="true" class="ng-hide">
+<h1>Hello there..</h1>
+</div>
+ <!-- /Ng-Include & Click -->
+ <div ng-include="'text.html'"></div>
+  <!-- /Ng-Click -->
+ <div>
+
+ Syntax: <div class=”btn” ng-click=”sendMail()”>Send Mail</div> 
+ </div>
+ </body>
+ </html>

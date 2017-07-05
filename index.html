@@ -1,0 +1,23 @@
+<html ng-app="myApp">
+<head>
+<title>Blogit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="https://drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/2.1.4/stamplay.min.js"></script>
+<script>stamplay.init('blogitinternshala');</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container-fluid">
+<div ng-include="'structure/menu.html'"></div>
+<div ng-include="'structure/jumbo.html'"></div>
+<div ng-view></div>
+</div>
+</body>
+</html>
