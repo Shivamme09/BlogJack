@@ -1,0 +1,10 @@
+{
+  "appId": "blogjack",
+  "apiKey": "630d4527df8508cef908b11dc9c865460be5cda751381f564111e06e77b5b2a0",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
